@@ -9,6 +9,8 @@ public class webClientConfig {
 
     @Bean
     public WebClient webClient(){
-        return WebClient.builder().build();
+        return (WebClient) WebClient.builder()
+        .baseUrl("https://viacep.com.br/ws")
+        .build();
     }
 }
