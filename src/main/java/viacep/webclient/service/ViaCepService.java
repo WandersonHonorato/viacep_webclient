@@ -14,11 +14,17 @@ public class ViaCepService {
     private final WebClient webclient;
 
     public Mono<ViaCepResponse> buscarCep(String cep) {
+
+        cep = cep.replace("-", "");
+
+        if (cep.length() < 8) {
+            throw new IllegalArgumentException("CEP inválido");
+        }
+
         return webclient
                 .get()
                 .uri("/{cep}/json/", cep)
                 .retrieve()
                 .bodyToMono(ViaCepResponse.class);
     }
-
 }
