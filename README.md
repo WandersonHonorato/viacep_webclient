@@ -16,7 +16,7 @@ API REST desenvolvida com <strong>Spring Boot</strong> +  <strong>Spring WebFlux
 
 <p align="center">
   <a href="http://localhost:8080/swagger-ui.html">📘 Swagger</a> •
-  <a href="#-descriçãor">📋 Descrição</a> •
+  <a href="#-descrição">📋 Descrição</a> •
   <a href="#-como-executar">▶️ Como Executar</a> •
   <a href="#-como-executar">▶️ Como Executar</a> •
   <a href="#-como-executar">▶️ Como Executar</a> •
