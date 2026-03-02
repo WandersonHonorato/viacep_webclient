@@ -35,10 +35,9 @@ API REST desenvolvida com <strong>Spring Boot</strong> +  <strong>Spring WebFlux
 
 <h2>📋 Descrição</h2>
 Projeto focado em prática de arquitetura em camadas, programação reativa e boas práticas de tratamento de exceções.
+Esta aplicação permite consultar endereços a partir de um CEP, consumindo a API externa do ViaCEP de forma não bloqueante, utilizando Spring WebFlux.
 
 <h2>📌 Objetivo do Projeto</h2>
-
-Esta aplicação permite consultar endereços a partir de um CEP, consumindo a API externa do ViaCEP de forma não bloqueante, utilizando Spring WebFlux.
 
 O objetivo principal foi praticar:<br>
 
