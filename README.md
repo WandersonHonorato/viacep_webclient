@@ -17,10 +17,10 @@ API REST desenvolvida com <strong>Spring Boot</strong> +  <strong>Spring WebFlux
 <p align="center">
   <a href="http://localhost:8080/swagger-ui.html">📘 Swagger</a> •
   <a href="#-descrição">📋 Descrição</a> •
-  <a href="#-objetivo-do-projeto">📌 Objetivo do Projeto</a> •
+  <a href="#-objetivo-do-projeto">📌Objetivo do Projeto</a> •
   <a href="#-tecnologias-utilizadas">🚀 Tecnologias Utilizadas</a> •
   <a href="#-arquitetura-do-projeto">📁 Arquitetura do Projeto</a> •
-  <a href="#-como-executar">▶️ Como Executar</a> •
+  <a href="#-conceitos-aplicados">🧠 Conceitos Aplicados</a> •
   <a href="#-como-executar">▶️ Como Executar</a> •
   <a href="#-como-executar">▶️ Como Executar</a> •
   <a href="#-tecnologias-utilizadas">⚙️ Tecnologias</a>
@@ -113,7 +113,7 @@ public Mono<ResponseEntity<ViaCepResponse>> buscarCep(@PathVariable String cep) 
             .map(ResponseEntity::ok);
 }
 ````
-<h2>⚙️ Como Executar<h2>
+<h2>▶️ Como Executar<h2>
   
 1️⃣ Clonar o repositório
 
