@@ -7,11 +7,11 @@ API REST desenvolvida com Spring Boot + Spring WebFlux + WebClient para consumo 
 <p align="center">
 <img src="https://img.shields.io/badge/Java-21-red">
 <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen">
+<img src="https://img.shields.io/badge/Apache-Maven-purple">
 <img src="https://img.shields.io/badge/WebFlux-Reactive-blue">
 <img src="https://img.shields.io/badge/Junit-5-green">
 <img src="https://img.shields.io/badge/Swagger-OpenAPI 3-brightgreen">
 <img src="https://img.shields.io/badge/Web-Client-orange">
-<img src="https://img.shields.io/badge/Maven-red">
 </p>
 
 ---
