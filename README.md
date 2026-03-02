@@ -16,13 +16,19 @@ API REST desenvolvida com <strong>Spring Boot</strong> +  <strong>Spring WebFlux
 
 <p align="center">
   <a href="http://localhost:8080/swagger-ui.html">📘 Swagger</a> •
+  <a href="#-descriçãor">📋 Descrição</a> •
+  <a href="#-como-executar">▶️ Como Executar</a> •
+  <a href="#-como-executar">▶️ Como Executar</a> •
+  <a href="#-como-executar">▶️ Como Executar</a> •
+  <a href="#-como-executar">▶️ Como Executar</a> •
+  <a href="#-como-executar">▶️ Como Executar</a> •
   <a href="#-como-executar">▶️ Como Executar</a> •
   <a href="#-tecnologias-utilizadas">⚙️ Tecnologias</a>
 </p>
 
 ---
 
-<h2>Descrição</h2>
+<h2>📋 Descrição</h2>
 Projeto focado em prática de arquitetura em camadas, programação reativa e boas práticas de tratamento de exceções.
 
 <h2>📌 Objetivo do Projeto</h2>
@@ -36,6 +42,16 @@ Consumo de API externa com WebClient<br>
 Arquitetura organizada em camadas<br>
 Tratamento global de exceções<br>
 Documentação com Swagger (OpenAPI)
+
+<h2>🚀 Tecnologias Utilizadas</h2>
+
+☕ Java 21+<br>
+🌱 Spring Boot 3.x<br>
+🌐 Spring WebFlux<br>
+🔗 WebClient<br>
+🛠 Maven<br>
+📦 Lombok<br>
+
 
 ## <h2>📁 Arquitetura do Projeto</h2>
 
