@@ -21,21 +21,16 @@ API REST desenvolvida com <strong>Spring Boot</strong> +  <strong>Spring WebFlux
 </p>
 
 <p align="center">
-  <a href="http://localhost:8080/swagger-ui.html">📘 Swagger</a> •
   <a href="#-descrição">📋Descrição</a> •
   <a href="#-objetivo-do-projeto">📌Objetivo do Projeto</a> •
-  <a href="#-tecnologias-utilizadas">🚀Tecnologias Utilizadas</a> •
+  <a href="#-tecnologias-utilizadas">⚙️Tecnologias Utilizadas</a> •
+  <br>
   <a href="#-arquitetura-do-projeto">📁Arquitetura do Projeto</a> •
   <a href="#-conceitos-aplicados">🧠Conceitos Aplicados</a> •
   <a href="#-como-executar">▶️Como Executar</a> •
-  <a href="#-como-executar">▶️ Como Executar</a> •
-  <a href="#-tecnologias-utilizadas">⚙️ Tecnologias</a>
+  <a href="http://localhost:8080/swagger-ui.html">📘 Swagger</a> •
 </p>
 
-
-<br><br><br>
-<br>
-<br>
 <br>
 
 
