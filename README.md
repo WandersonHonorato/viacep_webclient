@@ -1,17 +1,23 @@
 <h1 align="center">📦 ViaCEP WebClient API</h1>
 
 <p align="center">
-API REST desenvolvida com Spring Boot + Spring WebFlux + WebClient para consumo da API externa do ViaCEP.
+API REST desenvolvida com <strong>Spring Boot</strong> +  <strong>Spring WebFlux</strong> +  <strong>WebClient</strong> para consumo da API externa do ViaCEP.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Java-21-red">
-<img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen">
-<img src="https://img.shields.io/badge/Maven-Build-orange">
-<img src="https://img.shields.io/badge/WebFlux-Reactive-blue">
-<img src="https://img.shields.io/badge/Junit-5-green">
-<img src="https://img.shields.io/badge/Swagger-OpenAPI 3-brightgreen">
-<img src="https://img.shields.io/badge/Web-Client-white">
+  <img src="https://img.shields.io/badge/Java-21-red?style=for-the-badge&logo=openjdk">
+  <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=for-the-badge&logo=springboot">
+  <img src="https://img.shields.io/badge/WebFlux-Reactive-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven">
+  <img src="https://img.shields.io/badge/junit-5-green?style=for-the-badge&logo=Junit5">
+  <img src="https://img.shields.io/badge/Swagger-OpenAPI 3-green?style=for-the-badge&logo=swagger">
+  <img src="https://img.shields.io/badge/Spring-WebClient-white?style=for-the-badge&logo=webclient">
+</p>
+
+<p align="center">
+  <a href="http://localhost:8080/swagger-ui.html">📘 Swagger</a> •
+  <a href="#-como-executar">▶️ Como Executar</a> •
+  <a href="#-tecnologias-utilizadas">⚙️ Tecnologias</a>
 </p>
 
 ---
@@ -19,7 +25,7 @@ API REST desenvolvida com Spring Boot + Spring WebFlux + WebClient para consumo 
 <h2>Descrição</h2>
 Projeto focado em prática de arquitetura em camadas, programação reativa e boas práticas de tratamento de exceções.
 
-## <h2>📌 Objetivo do Projeto</h2>
+<h2>📌 Objetivo do Projeto</h2>
 
 Esta aplicação permite consultar endereços a partir de um CEP, consumindo a API externa do ViaCEP de forma não bloqueante, utilizando Spring WebFlux.
 
