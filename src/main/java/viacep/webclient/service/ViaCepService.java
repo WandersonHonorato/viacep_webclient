@@ -17,14 +17,22 @@ public class ViaCepService {
 
         cep = cep.replace("-", "");
 
-        if (cep.length() < 8) {
-            throw new IllegalArgumentException("CEP inválido");
+        if (!cep.matches("\\d{8}")) {
+            throw new IllegalArgumentException("CEP deve conter 8 números.");
         }
 
         return webclient
                 .get()
                 .uri("/{cep}/json/", cep)
                 .retrieve()
-                .bodyToMono(ViaCepResponse.class);
+                .bodyToMono(ViaCepResponse.class)
+                .flatMap(response -> {
+                    if (Boolean.TRUE.equals(response.erro())) {
+                        return Mono.error(
+                                new IllegalArgumentException("CEP não encontrado.")
+                        );
+                    }
+                    return Mono.just(response);
+                });
     }
 }
