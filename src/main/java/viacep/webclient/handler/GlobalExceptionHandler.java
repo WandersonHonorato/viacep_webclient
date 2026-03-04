@@ -1,11 +1,13 @@
 package viacep.webclient.handler;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import viacep.webclient.exception.CepNotFoundException;
+import viacep.webclient.response.ErrorResponse;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -15,30 +17,35 @@ import java.util.Map;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(CepNotFoundException.class)
-    public ResponseEntity<Map<String, Object>> handlerCepNotFound(
-            CepNotFoundException ex) {
+    public ResponseEntity<ErrorResponse> handleCepNotFound(
+            CepNotFoundException ex,
+            HttpServletRequest request) {
 
-        Map<String, Object> erro = new HashMap<>();
-        erro.put("timestamp", LocalDateTime.now());
-        erro.put("status", 404);
-        erro.put("error", "Not Found");
-        erro.put("message", ex.getMessage());
+        ErrorResponse error = new ErrorResponse(
+                LocalDateTime.now(),
+                HttpStatus.NOT_FOUND.value(),
+                "Not Found",
+                ex.getMessage(),
+                request.getRequestURI()
+        );
 
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erro);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
-    public ResponseEntity<Map<String, Object>> handleIllegalArgument(
-            IllegalArgumentException ex) {
+    public ResponseEntity<ErrorResponse> handleIllegalArgument(
+            IllegalArgumentException ex,
+            HttpServletRequest request) {
 
-        Map<String, Object> erro = new HashMap<>();
-        erro.put("timestamp", LocalDateTime.now());
-        erro.put("status", 400);
-        erro.put("error", "Bad Request");
-        erro.put("message", ex.getMessage());
+        ErrorResponse error = new ErrorResponse(
+                LocalDateTime.now(),
+                HttpStatus.BAD_REQUEST.value(),
+                "Bad Request",
+                ex.getMessage(),
+                request.getRequestURI()
+        );
 
-        return ResponseEntity
-                .status(HttpStatus.BAD_REQUEST).body(erro);
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
     }
 }
 
