@@ -85,7 +85,7 @@ src/
 <h2>🧠 Conceitos Aplicados</h2>
 
 Mono<T><br>
-map()<br>
+Consumir API externa<br>
 Tratamento de exceções com @ExceptionHandler<br>
 Arquitetura em camadas (Controller → Service → Client)
 
