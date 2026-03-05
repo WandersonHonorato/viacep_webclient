@@ -59,11 +59,13 @@ src/
 ├── main/
 │   ├── java/com/viacep/webclient/
 │   │   ├── controller/           # Controllers REST
-│   │   ├── service/              # Serviços de negócio
-│   │   ├── client/               # Entidades JPA
+            ├── CepController      
 │   │   ├── dto/                  # Data Transfer Objects
-│   │   ├── config/               # Configurações
 │   │   ├── exception/            # Tratamento de exceções
+|   |   ├── handler/
+|   |   ├── response/
+│   │   ├── service/              # Serviços de negócio
+│   │   ├── clientClientConfig/   # Configurações    
 │   │              
 │   └── resources/
 │       ├── application.properties
