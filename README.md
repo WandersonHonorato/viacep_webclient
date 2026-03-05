@@ -8,10 +8,14 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
 <p align="center">
   <img src="https://img.shields.io/badge/Java-21-red?style=for-the-badge&logo=openjdk">
   <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=for-the-badge&logo=springboot">
+  <img src="https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white"/>
   <img src="https://img.shields.io/badge/WebFlux-Reactive-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Spring-WebClient-white?style=for-the-badge&logo=webclient">
-  <img src="https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven">
-</p>
+  <img src="https://img.shields.io/badge/Git-white?style=for-the-badge&logo=git">
+  <img src="https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven">
+  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate">
+  <img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
+  </p>
 
 ---
 
