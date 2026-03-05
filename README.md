@@ -11,7 +11,6 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   <img src="https://img.shields.io/badge/WebFlux-Reactive-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Spring-WebClient-white?style=for-the-badge&logo=webclient">
   <img src="https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven">
-  <img src="https://img.shields.io/badge/junit-5-green?style=for-the-badge&logo=Junit5">
 </p>
 
 ---
