@@ -10,11 +10,8 @@ public record ViaCepResponse(
         String complemento,
         String bairro,
         String localidade,
-        // @JsonProperty mapeia
-        @JsonProperty("uf")
-        String UF,
-        @JsonProperty("ddd")
-        String DDD,
+        String uf,
+        String ddd,
         Boolean erro
 ) {
 }
