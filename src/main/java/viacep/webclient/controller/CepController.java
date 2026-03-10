@@ -16,8 +16,7 @@ public class CepController {
    private final ViaCepService viaCepService;
 
    @GetMapping("/{cep}")
-   public Mono<ResponseEntity<ViaCepResponse>> buscar(@PathVariable String cep){
-      return viaCepService.buscarCep(cep)
-         .map(ResponseEntity::ok);
+   public Mono<ViaCepResponse> buscar(@PathVariable String cep){
+      return viaCepService.buscarCep(cep);
    }
 }
