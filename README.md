@@ -66,17 +66,17 @@ src/
 │   │   ├── controller/           # Controllers REST
 |   |       ├── CepController      
 │   │   ├── dto/                  # Data Transfer Objects
-|   |         ├── ViaCEpResponse                  
+|   |       ├── ViaCEpResponse                  
 │   │   ├── exception/            # Tratamento global de exceções
-|   |         ├── CepNotFoundException           
+|   |       ├── CepNotFoundException           
 |   |   ├── handler/              # Exceção customizada
-|   |         ├── GlobalExceptionHandler       
+|   |       ├── GlobalExceptionHandler       
 |   |   ├── response/             # Retorno da API
-|   |           ├── ErrorResponse          
+|   |       ├── ErrorResponse          
 │   │   ├── service/              # Serviços de negócio
-|   |           ├── ViaCeoService        
+|   |       ├── ViaCeoService        
 │   │   ├── clientClientConfig/   # Configurações WebClient
-|   |           ├── webClientConfig                      
+|   |       ├── webClientConfig                      
 │   └── resources/
 │       ├── application.properties
 └── test/                     
