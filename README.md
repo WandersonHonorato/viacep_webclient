@@ -61,18 +61,25 @@ Controller → Service → Client (WebClient) → API Externa
 src/
 ├── main/
 │   ├── java/com/viacep/webclient/
+|   |   ├── config/
+|   |       ├── OpenApiConfig     # OpenAPI configurações (Swagger)
 │   │   ├── controller/           # Controllers REST
-            ├── CepController      
+|   |       ├── CepController      
 │   │   ├── dto/                  # Data Transfer Objects
-│   │   ├── exception/            # Tratamento de exceções
-|   |   ├── handler/
-|   |   ├── response/
+|   |         ├── ViaCEpResponse                  
+│   │   ├── exception/            # Tratamento global de exceções
+|   |         ├── CepNotFoundException           
+|   |   ├── handler/              # Exceção customizada
+|   |         ├── GlobalExceptionHandler       
+|   |   ├── response/             # Retorno da API
+|   |           ├── ErrorResponse          
 │   │   ├── service/              # Serviços de negócio
-│   │   ├── clientClientConfig/   # Configurações    
-│   │              
+|   |           ├── ViaCeoService        
+│   │   ├── clientClientConfig/   # Configurações WebClient
+|   |           ├── webClientConfig                      
 │   └── resources/
 │       ├── application.properties
-└── test/                        # Testes unitários
+└── test/                     
 ```
 
 <h2>⚙️Tecnologias Utilizadas</h2>
