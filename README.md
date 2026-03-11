@@ -9,8 +9,8 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   <img src="https://img.shields.io/badge/Java-21-red?style=for-the-badge&logo=openjdk">
   <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=for-the-badge&logo=springboot">
   <img src="https://img.shields.io/badge/Spring-WebFlux-blue.svg?style=for-the-badge&logo=spring&logoColor=white">
+   <br>
   <img src="https://img.shields.io/badge/Spring-WebClient-white?style=for-the-badge&logo=spring&logoColor=white">
-  <br>
   <img src="https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven">
     <img src="https://img.shields.io/badge/Git-white?style=for-the-badge&logo=git">
   <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate">
@@ -27,11 +27,12 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   • <a href="#-descrição">📋Descrição</a> •
   <a href="#-objetivo-do-projeto">📌Objetivo do Projeto</a> •
   <a href="#-arquitetura-do-projeto">📁Arquitetura do Projeto</a>
-  <br>
   • <a href="#-tecnologias-utilizadas">⚙️Tecnologias Utilizadas</a>
+    <br>
   • <a href="#-conceitos-aplicados">🧠Conceitos Aplicados</a> •
   <a href="#-pre-requisitos">🛠️ Pré-requisitos</a>
   • <a href="#-como-executar">▶️Como Executar</a>
+  • <a href="#-como-executar">▶️ Swagger OpenApi</a>
 
 </p>
 
