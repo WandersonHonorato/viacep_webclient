@@ -8,11 +8,10 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
 <p align="center">
   <img src="https://img.shields.io/badge/Java-21-red?style=for-the-badge&logo=openjdk">
   <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=for-the-badge&logo=springboot">
-  <img src="https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white"/>
-  <img src="https://img.shields.io/badge/WebFlux-Reactive-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Spring-WebClient-white?style=for-the-badge&logo=webclient">
-  <img src="https://img.shields.io/badge/Git-white?style=for-the-badge&logo=git">
+  <img src="https://img.shields.io/badge/Spring-WebFlux-blue.svg?style=for-the-badge&logo=spring&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring-WebClient-white?style=for-the-badge&logo=spring&logoColor=white">
   <img src="https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven">
+    <img src="https://img.shields.io/badge/Git-white?style=for-the-badge&logo=git">
   <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate">
   <img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
   </p>
@@ -93,13 +92,16 @@ src/
 
 <strong>Outors</strong>
 - Maven<br>
+- Swagger/OpenAPI
 
 <h2>🧠 Conceitos Aplicados</h2>
 
-Mono<T><br>
+Spring WebFlux
+Programação Reativa com Mono<T> (0 ou 1) e Flux (1 o N)<br>
+Retornos Http<br>
 Consumir API externa<br>
-Tratamento de exceções com @ExceptionHandler<br>
-Arquitetura em camadas (Controller → Service → Client)
+Tratamento de exceções customizadas com @RestControllerAdvice<br>
+Arquitetura de camadas (Controller → Service → Client)
 
 <h2>🛠️ Pré-requisitos</h2>
 
@@ -112,15 +114,39 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 <a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">Lombok</a>
 
 
-📌 Buscar CEP<br>
+### ▶️ Como Executar
+  
+1. **Clone o repositório**
+````bash
+git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+````
+2. **Rodar a aplicação**
+
+# Usando Maven Wrapper (recomendado)
+```bash
+./mvnw spring-boot:run
+````
+3. **Ou usando Maven instalado**
+````bash
+mvn spring-boot:run
+````
+
+### 📌 Buscar CEP
+
 <br>
-````GET /api/cep/{cep}```` <br>
-<br>
-📥 Exemplo de Requisição <br>
-<br>
-````curl http://localhost:8080/api/cep/01001000````<br>
-<br>
-📤 Exemplo de Resposta <br>
+ 
+```
+GET/cep/{cep}
+````
+- Exemplo de Requisição <br>
+
+
+````
+curl http://localhost:8080/cep/01001000
+````
+
+- Exemplo de Resposta (200) <br>
+
 ````
 {
   "cep": "01001-000",
@@ -130,28 +156,17 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
   "localidade": "São Paulo",
   "uf": "SP",
   "ddd": "11"
+  "error": null
 }
 ````
-🧩 Exemplo do Controller
+###🧩 Exemplo do Controller
 ````@GetMapping("/{cep}")
-public Mono<ResponseEntity<ViaCepResponse>> buscarCep(@PathVariable String cep) {
-    return viaCepService.buscarCep(cep)
-            .map(ResponseEntity::ok);
+   public Mono<ViaCepResponse> buscar(@PathVariable String cep){
+       return viaCepService.buscarCep(cep);
 }
 ````
-<h2>▶️ Como Executar<h2>
-  
-1️⃣ Clonar o repositório
 
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
-
-2️⃣ Rodar a aplicação
-mvn spring-boot:run
-
-A aplicação estará disponível em:
-
-http://localhost:8080
-🛡 Tratamento Global de Erros
+###🛡 Tratamento Global de Erros
 
 Exemplo de resposta para CEP inválido:
 
@@ -161,15 +176,9 @@ Exemplo de resposta para CEP inválido:
   "error": "Bad Request",
   "message": "CEP inválido"
 }
-📊 Conceitos Demonstrados
+<br>
 
-✔ Programação Reativa com Mono
-✔ Consumo de API externa com WebClient
-✔ Tratamento global de exceções
-✔ Boas práticas REST
-✔ Clean Code
-
-👨‍💻 Autor
+###👨‍💻 Autor
 
 Wanderson Honorato
 🔗 LinkedIn: https://www.linkedin.com/in/wanderson-honorato/
