@@ -27,7 +27,7 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   <a href="#-objetivo-do-projeto">📌Objetivo do Projeto</a> •
   <a href="#-arquitetura-do-projeto">📁Arquitetura do Projeto</a>
   <br>
-  <a href="#-tecnologias-utilizadas">⚙️Tecnologias Utilizadas</a>
+  • <a href="#-tecnologias-utilizadas">⚙️Tecnologias Utilizadas</a>
   • <a href="#-conceitos-aplicados">🧠Conceitos Aplicados</a> •
   <a href="#-pre-requisitos">🛠️ Pré-requisitos</a>
   • <a href="#-como-executar">▶️Como Executar</a>
