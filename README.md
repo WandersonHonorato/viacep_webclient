@@ -10,6 +10,7 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=for-the-badge&logo=springboot">
   <img src="https://img.shields.io/badge/Spring-WebFlux-blue.svg?style=for-the-badge&logo=spring&logoColor=white">
   <img src="https://img.shields.io/badge/Spring-WebClient-white?style=for-the-badge&logo=spring&logoColor=white">
+  <br>
   <img src="https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven">
     <img src="https://img.shields.io/badge/Git-white?style=for-the-badge&logo=git">
   <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate">
