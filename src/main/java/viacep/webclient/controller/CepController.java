@@ -2,6 +2,8 @@ package viacep.webclient.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +21,12 @@ public class CepController {
    @GetMapping("/{cep}")
    @Operation(summary = "Buscar endereço por CEP",
            description = "Consulta um endereço utilizando a API ViaCEP")
-
+   @ApiResponses(value = {
+           @ApiResponse(responseCode = "200", description = "CEP encontrado"),
+           @ApiResponse(responseCode = "404", description = "CEP não encontrado"),
+           @ApiResponse(responseCode = "400", description = "CEP inválido")
+   })
+   @Parameter(description = "CEP para busca", example = " 60150161")
    public Mono<ViaCepResponse> buscar(@PathVariable String cep){
        return viaCepService.buscarCep(cep);
    }
