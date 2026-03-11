@@ -26,7 +26,7 @@ public class CepController {
            @ApiResponse(responseCode = "404", description = "CEP não encontrado"),
            @ApiResponse(responseCode = "400", description = "CEP inválido")
    })
-   @Parameter(description = "CEP para busca", example = " 60150161")
+   @Parameter(description = "CEP para busca", example = "60165121")
    public Mono<ViaCepResponse> buscar(@PathVariable String cep){
        return viaCepService.buscarCep(cep);
    }
