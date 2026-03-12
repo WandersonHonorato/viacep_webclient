@@ -62,8 +62,8 @@ Controller → Service → Client (WebClient) → API Externa
 src/
 ├── main/
 │   ├── java/com/viacep/webclient/
-|   |   ├── config/
-|   |       ├── OpenApiConfig     # OpenAPI configurações (Swagger)
+|   |   ├── config/               # OpenAPI configurações (Swagger)
+|   |       ├── OpenApiConfig     
 │   │   ├── controller/           # Controllers REST
 |   |       ├── CepController      
 │   │   ├── dto/                  # Data Transfer Objects
@@ -109,11 +109,11 @@ Arquitetura de camadas (Controller → Service → Client)
 
 Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 
-<a href="https://www.oracle.com/br/java/technologies/downloads/">Java 21</a>
-<a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">Spring Boot 3+</a>
-<a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">WebFlux</a>
-<a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">SpringWeb</a>
-<a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">Lombok</a>
+- <a href="https://www.oracle.com/br/java/technologies/downloads/">Java 21</a><br>
+- <a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">Spring Boot 3+</a><br>
+- <a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">WebFlux</a><br>
+- <a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">SpringWeb</a><br>
+- <a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">Lombok</a><br>
 
 
 ### ▶️ Como Executar
@@ -124,18 +124,16 @@ git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
 ````
 2. **Rodar a aplicação**
 
-# Usando Maven Wrapper (recomendado)
+3. Usando Maven Wrapper (recomendado)
 ```bash
 ./mvnw spring-boot:run
 ````
-3. **Ou usando Maven instalado**
+4. **Ou usando Maven instalado**
 ````bash
 mvn spring-boot:run
 ````
 
 ### 📌 Buscar CEP
-
-<br>
  
 ```
 GET/cep/{cep}
@@ -161,26 +159,27 @@ curl http://localhost:8080/cep/01001000
   "error": null
 }
 ````
-###🧩 Exemplo do Controller
+### 🧩 Exemplo do Controller
 ````@GetMapping("/{cep}")
    public Mono<ViaCepResponse> buscar(@PathVariable String cep){
        return viaCepService.buscarCep(cep);
 }
 ````
 
-###🛡 Tratamento Global de Erros
+### 🛡 Tratamento Global de Erros
 
-Exemplo de resposta para CEP inválido:
+Exemplo de resposta para CEP inválido (400):
 
+````
 {
   "timestamp": "2026-02-26T14:30:00",
   "status": 400,
   "error": "Bad Request",
-  "message": "CEP inválido"
+  "message": "CEP deve conter 8 números"
 }
-<br>
+````
 
-###👨‍💻 Autor
+### 👨‍💻 Autor
 
-Wanderson Honorato
+Wanderson Honorato:<BR>
 🔗 LinkedIn: https://www.linkedin.com/in/wanderson-honorato/
