@@ -1,6 +1,5 @@
 ## <h1 align="center">ViaCEP WebClient API</h1>
 
-
 <p align="center">
 API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux</strong> + <strong>WebClient</strong> para consumo da API externa do ViaCEP.
 </p>
@@ -24,7 +23,7 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
 </p>
 
 <p align="center">
-  • <a href="#-descrição">📋Descrição</a> •
+  • <a href="#-descrição">📋 Descrição</a> •
   <a href="#-objetivo-do-projeto">📌Objetivo do Projeto</a> •
   <a href="#-arquitetura-do-projeto">📁Arquitetura do Projeto</a>
   • <a href="#-tecnologias-utilizadas">⚙️Tecnologias Utilizadas</a>
@@ -32,7 +31,7 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   • <a href="#-conceitos-aplicados">🧠Conceitos Aplicados</a> •
   <a href="#-pre-requisitos">🛠️ Pré-requisitos</a>
   • <a href="#-como-executar">▶️Como Executar</a>
-  • <a href="#swagger-openApir">❎ Swagger OpenApi</a>
+  • <a href="#-swagger-openApir">❎ Swagger OpenApi</a>
 
 </p>
 
