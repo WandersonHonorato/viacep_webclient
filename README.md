@@ -31,7 +31,10 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   • <a href="#-conceitos-aplicados">🧠 Conceitos Aplicados</a> •
   <a href="#-pre-requisitos">🛠️ Pré-requisitos</a>
   • <a href="#-como-executar">▶️ Como Executar</a>
+  • <a href="#tratamento-de-exceções">❎ Tratamentos de Exceções</a>
   • <a href="#-swagger-openApi">❎ Swagger OpenApi</a>
+
+
 
 </p>
 
@@ -104,7 +107,7 @@ Consumir API externa<br>
 Tratamento de exceções customizadas com @RestControllerAdvice<br>
 Arquitetura de camadas (Controller → Service → Client)
 
-<h2>🛠️ Pré-requisitos</h2>
+<h2 id="pre-requisitos">🛠️ Pré-requisitos</h2>
 
 Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 
@@ -115,7 +118,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 - <a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">Lombok</a><br>
 
 
-<h2>▶️ Como Executar</h2>
+<h2 id="como-executar">▶️ Como Executar</h2>
   
 1. **Clone o repositório**
 ````bash
@@ -166,7 +169,7 @@ curl http://localhost:8080/cep/01001000
 ````
 
 
-<h2>❎ Swagger OpenApi</h2>
+<h2 id="swagger-openapi">❎ Swagger OpenApi</h2>
 
 ````Acessar documentação da API na porta 8080:
 http://localhost:8080/swagger-ui.html
@@ -176,7 +179,7 @@ ou tentar pelo link:
 http://localhost:8080/swagger-ui/index.html
 ````
 
-<h2>⚠️ Tratamento Global de Erros:</h2>
+<h2 id="tratamento-de-erros">⚠️ Tratamento de Exceções:</h2>
 
 Exemplo de resposta para CEP inválido (400):
 
