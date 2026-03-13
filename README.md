@@ -32,7 +32,7 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   • <a href="#-conceitos-aplicados">🧠Conceitos Aplicados</a> •
   <a href="#-pre-requisitos">🛠️ Pré-requisitos</a>
   • <a href="#-como-executar">▶️Como Executar</a>
-  • <a href="#-como-executar">▶️ Swagger OpenApi</a>
+  • <a href="#swagger-openApir">❎ Swagger OpenApi</a>
 
 </p>
 
@@ -164,6 +164,17 @@ curl http://localhost:8080/cep/01001000
    public Mono<ViaCepResponse> buscar(@PathVariable String cep){
        return viaCepService.buscarCep(cep);
 }
+````
+
+
+<h2>❎ Swagger OpenApi</h2>
+
+````Link para acessar na porta 8080:
+http://localhost:8080/swagger-ui.html
+````
+ou tentar pelo link:
+````
+http://localhost:8080/swagger-ui/index.html
 ````
 
 <h2>⚠️ Tratamento Global de Erros:</h2>
