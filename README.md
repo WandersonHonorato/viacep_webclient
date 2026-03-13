@@ -85,7 +85,7 @@ src/
 └── test/                     
 ```
 
-<h2>⚙️Tecnologias Utilizadas</h2>
+<h2>⚙️ Tecnologias Utilizadas</h2>
 
 <strong>Backend</strong>
 - Java 21<br>
