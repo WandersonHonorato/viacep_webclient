@@ -116,7 +116,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 - <a href="https://spring.io/blog/2009/12/04/logging-dependencies-in-spring">Lombok</a><br>
 
 
-### ▶️ Como Executar
+<h2>▶️ Como Executar</h2>
   
 1. **Clone o repositório**
 ````bash
@@ -133,7 +133,7 @@ git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
 mvn spring-boot:run
 ````
 
-### 📌 Buscar CEP
+<h2>📌 Buscar CEP</h2>
  
 ```
 GET/cep/{cep}
@@ -166,16 +166,28 @@ curl http://localhost:8080/cep/01001000
 }
 ````
 
-### 🛡 Tratamento Global de Erros
+<h2>⚠️ Tratamento Global de Erros:</h2>
 
 Exemplo de resposta para CEP inválido (400):
 
 ````
 {
-  "timestamp": "2026-02-26T14:30:00",
+  "timestamp": "13-03-2026 08:55:37",
   "status": 400,
   "error": "Bad Request",
-  "message": "CEP deve conter 8 números"
+  "message": "CEP deve conter 8 números.",
+  "path": "/cep/abc"
+}
+````
+Exemplo de resposta para CEP não encontrado (404):
+
+````
+{
+  "timestamp": "13-03-2026 08:56:31",
+  "status": 404,
+  "error": "Not Found",
+  "message": "CEP não encontrado: 11111111",
+  "path": "/cep/11111111"
 }
 ````
 
