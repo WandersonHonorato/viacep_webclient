@@ -31,7 +31,7 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   • <a href="#-conceitos-aplicados">🧠 Conceitos Aplicados</a> •
   <a href="#pre-requisitos">🛠️ Pré-requisitos</a>
   • <a href="#como-executar">▶️ Como Executar</a>
-  • <a href="#tratamento-de-erros">❎ Tratamentos de Exceções</a>
+  • <a href="#tratamento-de-erros">⚠️ Tratamentos de Exceções</a>
   • <a href="#swagger-openapi">❎ Swagger OpenApi</a>
 
 
