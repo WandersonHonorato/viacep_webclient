@@ -168,17 +168,6 @@ curl http://localhost:8080/cep/01001000
 }
 ````
 
-
-<h2 id="swagger-openapi">❎ Swagger OpenApi</h2>
-
-````Acessar documentação da API na porta 8080:
-http://localhost:8080/swagger-ui.html
-````
-ou tentar pelo link:
-````
-http://localhost:8080/swagger-ui/index.html
-````
-
 <h2 id="tratamento-de-erros">⚠️ Tratamento de Exceções:</h2>
 
 Exemplo de resposta para CEP inválido (400):
@@ -202,6 +191,16 @@ Exemplo de resposta para CEP não encontrado (404):
   "message": "CEP não encontrado: 11111111",
   "path": "/cep/11111111"
 }
+````
+
+<h2 id="swagger-openapi">❎ Swagger OpenApi</h2>
+
+````Acessar documentação da API na porta 8080:
+http://localhost:8080/swagger-ui.html
+````
+ou tentar pelo link:
+````
+http://localhost:8080/swagger-ui/index.html
 ````
 
 ### 👨‍💻 Autor
