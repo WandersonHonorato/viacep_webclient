@@ -26,7 +26,7 @@ API REST desenvolvida com <strong>Spring Boot</strong> + <strong>Spring WebFlux<
   • <a href="#-descrição">📋 Descrição</a> •
   <a href="#-objetivo-do-projeto">📌Objetivo do Projeto</a> •
   <a href="#-arquitetura-do-projeto">📁Arquitetura do Projeto</a>
-  • <a href="#-tecnologias-utilizadas">⚙️Tecnologias Utilizadas</a>
+  • <a href="#tecnologias-utilizadas">⚙️Tecnologias Utilizadas</a>
     <br>
   • <a href="#-conceitos-aplicados">🧠 Conceitos Aplicados</a> •
   <a href="#pre-requisitos">🛠️ Pré-requisitos</a>
@@ -85,7 +85,7 @@ src/
 └── test/                     
 ```
 
-<h2>⚙️ Tecnologias Utilizadas</h2>
+<h2 id="tecnologias-utilizadas">⚙️ Tecnologias Utilizadas</h2>
 
 <strong>Backend</strong>
 - Java 21<br>
