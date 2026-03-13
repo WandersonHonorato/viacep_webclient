@@ -169,7 +169,7 @@ curl http://localhost:8080/cep/01001000
 
 <h2>❎ Swagger OpenApi</h2>
 
-````Link para acessar na porta 8080:
+````Acessar documentação da API na porta 8080:
 http://localhost:8080/swagger-ui.html
 ````
 ou tentar pelo link:
